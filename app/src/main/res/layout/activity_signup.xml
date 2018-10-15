@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/topbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/topbarbackground">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:text="InstaAds"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            app:fontFamily="@font/montserrat" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="30dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/cardLogin"
+            android:layout_alignLeft="@+id/cardLogin">
+
+            <EditText
+                android:id="@+id/editTextname"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#515BD4"
+                android:ems="10"
+                android:hint="Your Full Name"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                app:fontFamily="@font/montserrat" />
+
+
+            <EditText
+                android:id="@+id/editTextemail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/editTextname"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#515BD4"
+                android:ems="10"
+                android:hint="Your Email"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                app:fontFamily="@font/montserrat" />
+
+            <EditText
+                android:id="@+id/editTextsignuppassword"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/editTextemail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#515BD4"
+                android:ems="10"
+                android:hint="Your Password"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                app:fontFamily="@font/montserrat" />
+
+            <EditText
+                android:id="@+id/editTextconfirmpass"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/editTextsignuppassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#515BD4"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                app:fontFamily="@font/montserrat" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/editTextconfirmpass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/topbarbackground"
+                android:text="Sign Up"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/montserrat" />
+
+            <RelativeLayout
+                android:id="@+id/donthaveaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@android:color/transparent"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account?"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/montserrat" />
+
+                <TextView
+                    android:id="@+id/logintextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toEndOf="@+id/textView3"
+                    android:layout_toRightOf="@+id/textView3"
+                    android:text="Login"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    app:fontFamily="@font/montserrat" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Sign Up to InstaAds"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/montserrat" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
